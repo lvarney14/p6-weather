@@ -2,51 +2,38 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/weather-icons.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>P6: Weather App</title>
     
-    <script src="js/vendor/modernizr.js"></script>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	
   </head>
-  <body>
+  <body style="">
     
-    <div class="row">
-      
-      <div class="columns small-12">
-        <h1 class="temp"> </h1>
-      </div>
-      
-      <div class="columns small-6">
-        <h3 class="wi-thermometer-exterior tomHi"> </h3>
-      </div>
-      
-      <div class="columns small-6">
-        <h3 class="wi-thermometer-internal tomLo"> </h3>
-      </div>
-      
-      <div class="columns small-12">
-        <form id="getWeather">
-    <input type="text" />
-    <button>Get Weather</button>
-</form>
-
-<!-- Output Weather --> 
-<ul>
-  <li class="temp"> </li>
-  <li class="city"> </li>
-</ul>
-        <p class="cityAndState"> </p>
-      </div>
-
-    </div> <!-- end .row -->
-     
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/scripts.js"></script>
-
-  </body>
-</html>
+    <!-- Website -->
+    <div class="code">
+    	<div>
+            <h1>Weather App:</h1>
+            <ul id="inputs">
+                <li>
+                    <input type="text" placeholder="Zipcode">
+                </li>
+                <li>
+                    <button class="b-large">Get Weather</button>
+                </li>
+            </ul>
+        </div>
+            
+        <div id="weather">
+        </div>
+    </div>
+    
+    <!-- Scripts --> 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simpleWeather.js"></script>
+    <script src="js/scripts.js"></script>    
+  
+</body></html>
